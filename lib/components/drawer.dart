@@ -76,17 +76,21 @@ class DrawerMenu extends StatelessWidget {
                     color: Colors.black87)),
           ),
           ListTile(
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, 'options');
+            },
             leading: Icon(
-              Icons.group_outlined,
+              Icons.comment,
               size: 28.0,
               color: Colors.black38,
             ),
-            title: Text('Nuevo canal',
-                style: TextStyle(
-                    fontSize: 18.0,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.black87)),
+            title: Text('Opciones',
+              style: TextStyle(
+                fontSize: 18.0,
+                fontWeight: FontWeight.w600,
+                color: Colors.black87
+              )
+            ),
           ),
         ],
       ),

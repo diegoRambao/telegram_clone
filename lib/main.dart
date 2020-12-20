@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'home_page.dart';
-import 'package:telegram_clone/profile.dart';
+import 'profile.dart';
+import 'options_page.dart';
 
 void main() => runApp(
   MaterialApp(
@@ -10,7 +11,8 @@ void main() => runApp(
       initialRoute: 'home',
       routes: {
         'home' : (context) => HomePage(),
-        'profile': (context) => ProfilePage()
+        'profile': (context) => ProfilePage(),
+        'options': (context) => OptionPage()
       },
     )
 );
